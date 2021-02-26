@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luis_medina">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Faican_Alexander"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Luis_Medina">
+        <activity android:name="com.example.luis_medina.ActivityVollyAlumno"></activity>
+        <activity android:name="com.example.luis_medina.ActivityBDDocente" />
+        <activity android:name="com.example.luis_medina.ActividadMemoriaSD" />
+        <activity android:name="com.example.luis_medina.ActivityMemoriaPrograma" />
+        <activity
+            android:name="com.example.luis_medina.ActividadMemoriaInterna"
+            android:label="@string/title_activity_actividad_memoria_interna"
+            android:theme="@style/Theme.Luis_Medina.NoActionBar" />
+        <activity
+            android:name="com.example.luis_medina.Activity_Principal"
+            android:label="@string/title_activity__principal"
+            android:theme="@style/Theme.Luis_Medina.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.luis_medina.ui.login.ActivityLogin"
+            android:label="@string/title_activity_login" />
+        <activity android:name="com.example.luis_medina.ActividadFragmentos" />
+        <activity android:name="com.example.luis_medina.ActivityNombres" />
+        <activity android:name="com.example.luis_medina.MainActivity" />
+    </application>
+
+</manifest>
